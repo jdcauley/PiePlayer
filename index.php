@@ -45,14 +45,17 @@
 						</div>
 					</div>
 				</div>
-				
+			</div>
 		
 		
-				<footer>
+				<footer class="container ">
 					<div class="row">
+						<div class="span12">
+
+						</div>
 					</div>
 				</footer>
-		</div>
+		
 		
 <script src="/assets/js/playlist.js"></script>
 <script src="/assets/js/bootstrap.js"></script>
