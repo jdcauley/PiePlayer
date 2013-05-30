@@ -1,0 +1,14 @@
+
+/* New Circle Player - Start */
+	
+	/* Playlist */
+	
+.main{
+	margin-top: 20px;
+}
+.track-list{
+	list-style: none;
+}
+.track-list li{
+	padding-top: 10px;
+}
