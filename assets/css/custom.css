@@ -1,0 +1,918 @@
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+body {
+    background: url('bkgrd.jpg') no-repeat;
+    background-size: 100%;
+    }
+
+
+
+/* =============================================================================
+   Header
+   ========================================================================== */
+
+#banner { }
+
+/* Fixed Topbar Navigation */
+body.top-navbar { padding-top: 85px; }
+body.admin-bar .navbar-fixed-top { top: 28px; }
+
+
+
+
+
+
+/* ==========================================================================
+   Content
+   ========================================================================== */
+
+#content { }
+
+
+
+/* ==========================================================================
+   Primary Content
+   ========================================================================== */
+
+#main { }
+
+
+
+/* ==========================================================================
+   Sidebar
+   ========================================================================== */
+
+#sidebar { }
+
+
+
+/* ==========================================================================
+   Posts
+   ========================================================================== */
+
+.hentry header { }
+.hentry time { }
+.hentry p.byline { }
+.hentry .entry-content { }
+.hentry footer { }
+
+
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+#content-info { }
+
+
+
+/* ==========================================================================
+   WordPress Generated Classes
+   See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
+   ========================================================================== */
+
+.aligncenter { display: block; margin: 0 auto; }
+.alignleft { float: left; }
+.alignright { float: right; }
+figure.alignnone { margin-left: 0; margin-right: 0; }
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media (max-width: 979px) {
+  /* Fix top padding when using the responsive grid with the fixed topbar */
+  body.top-navbar {
+    padding-top: 0;
+  }
+}
+
+/* ==========================================================================
+   TEDx GSO CSS
+   ========================================================================== */
+
+a{
+	color:#F5312D;
+	text-decoration:none
+}
+a:hover{
+	color:#7F0C13;
+	text-decoration:none;
+}
+p{
+	font-size:14px;
+    color:#fff;
+}
+
+/* Navbar Changes
+.navbar .brand{
+    display:block;
+	float:left;
+	padding:5px 20px 5px;
+	margin-left:-20px;
+	font-size:38px;
+	font-weight:200;
+	color:#991520;
+	text-shadow:0 1px 0 #fff
+}  
+.navbar .brand:hover{
+	text-decoration:none
+}
+.navbar .brandfrt{
+    display:block;
+	float:left;
+	padding:10px 20px 10px;
+	margin-left:-20px;
+	font-size:38px;
+	font-weight:200;
+	color:#991520;
+	text-shadow:0 1px 0 #fff
+}
+.navbar .brandfrt:hover{
+	text-decoration:none
+} */
+.navbar-text{
+	margin-bottom:0;
+	line-height:40px
+}
+.navbar-link{
+	color:#777
+}
+.navbar-link:hover{
+	color:#333
+}
+
+.navbar-fixed-top .navbar-inner,.navbar-static-top .navbar-inner{
+	-webkit-box-shadow:inset 0 0px 0 rgba(0,0,0,0),0 0px 0px rgba(0,0,0,0);
+	-moz-box-shadow:inset 0 0px 0 rgba(0,0,0,0),0 0px 0px rgba(0,0,0,0);
+	box-shadow:inset 0 0px 0 rgba(0,0,0,0),0 0px 0px rgba(0,0,0,0)
+}
+.navbar-fixed-top .navbar-inner,.navbar-static-top .navbar-inner{
+	-webkit-box-shadow:0 2px 12px rgba(0,0,0,0.1);
+	-moz-box-shadow:0 2px 12px rgba(0,0,0,0.1);
+	box-shadow:0 2px 12px rgba(0,0,0,0.1)}
+.navbar-fixed-bottom .navbar-inner{
+	border-width:0px 0 0
+} 
+.navbar-fixed-top .navbar-inner,.navbar-static-top .navbar-inner{
+	border-width:0 0 0px
+}
+.navbar-inner {
+	  background-color: #ffffff; /* fallback color, place your own */
+	  /* Gradients for modern browsers, replace as you see fit */
+	  background-image: -moz-linear-gradient(top, #ffffff, #ffffff);
+	  background-image: -ms-linear-gradient(top, #ffffff, #ffffff);
+	  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#ffffff));
+	  background-image: -webkit-linear-gradient(top, #ffffff, #ffffff);
+	  background-image: -o-linear-gradient(top, #ffffff, #ffffff);
+	  background-image: linear-gradient(top, #ffffff, #ffffff);
+	  background-repeat: repeat-x;
+	  /* IE8-9 gradient filter */
+	  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0);
+	/* @end */
+}	
+
+.navsearch{
+	margin-top:5px;
+}
+
+.dropdown-toggle{
+	margin-top:15px;
+	*margin-bottom:-3px
+}
+.dropdown-toggle:active,.open .dropdown-toggle{
+	outline:0
+}
+.caret{
+	display:inline-block;
+	width:0;
+	height:0;
+	vertical-align:top;
+	border-top:4px solid #000;
+	border-right:4px solid transparent;
+	border-left:4px solid transparent;
+	content:""
+}
+.dropdown.caret{
+	margin-top:8px;
+	margin-left:2px
+}
+.dropdown-menu{
+	position:absolute;
+	top:100%;
+	left:0;
+	z-index:1000;
+	display:none;
+	float:left;
+	min-width:160px;
+	padding:5px 0;
+	margin:2px 0 0;
+	list-style:none;
+	background-color:#fff;
+	border:1px solid #ccc;
+	border:1px solid rgba(0,0,0,0.2);
+	*border-right-width:2px;
+	*border-bottom-width:2px;
+	-webkit-border-radius:6px;
+	-moz-border-radius:6px;
+	border-radius:6px;
+	-webkit-box-shadow:0 5px 10px rgba(0,0,0,0.2);
+	-moz-box-shadow:0 5px 10px rgba(0,0,0,0.2);
+	box-shadow:0 5px 10px rgba(0,0,0,0.2);
+	-webkit-background-clip:padding-box;
+	-moz-background-clip:padding;
+	background-clip:padding-box
+}
+.dropdown-menu.pull-right{
+	right:0;
+	left:auto
+}
+.dropdown-menu .divider{
+	*width:100%;
+	height:1px;
+	margin:9px 1px;
+	*margin:-5px 0 5px;
+	overflow:hidden;
+	background-color:#e5e5e5;
+	border-bottom:1px solid #fff
+}
+.dropdown-menu li>a{
+	display:block;
+	padding:3px 20px;
+	clear:both;
+	font-weight:normal;
+	line-height:20px;
+	color:#333;
+	white-space:nowrap
+}
+.dropdown-menu li>a:hover,.dropdown-menu li>a:focus,.dropdown-submenu:hover>a{
+	color:#fff;
+	text-decoration:none;
+	background-color:#F5312D;
+	/*
+	background-image:-moz-linear-gradient(top,#08c,#0077b3);
+	background-image:-webkit-gradient(linear,0 0,0 100%,from(#08c),to(#0077b3));
+	background-image:-webkit-linear-gradient(top,#08c,#0077b3);
+	background-image:-o-linear-gradient(top,#08c,#0077b3);background-image:linear-gradient(to bottom,#08c,#0077b3);
+	background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc',endColorstr='#ff0077b3',GradientType=0)
+	*/
+	}
+.dropdown-menu .active>a,.dropdown-menu .active>a:hover{
+	color:#fff;
+	text-decoration:none;
+	background-color:#F5312D;
+	/*
+	background-image:-moz-linear-gradient(top,#08c,#0077b3);
+	background-image:-webkit-gradient(linear,0 0,0 100%,from(#08c),to(#0077b3));
+	background-image:-webkit-linear-gradient(top,#08c,#0077b3);
+	background-image:-o-linear-gradient(top,#08c,#0077b3);background-image:linear-gradient(to bottom,#08c,#0077b3);
+	background-repeat:repeat-x;
+	outline:0;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc',endColorstr='#ff0077b3',GradientType=0)
+	*/
+}
+.dropdown-menu .disabled>a,.dropdown-menu .disabled>a:hover{
+	color:#999
+}
+.dropdown-menu .disabled>a:hover{
+	text-decoration:none;
+	cursor:default;
+	background-color:transparent;
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.gradient(enabled=false)
+}
+.open{
+	*z-index:1000
+}
+.open>.dropdown-menu{
+	display:block
+}
+.pull-right>.dropdown-menu{
+	right:0;left:auto
+}
+.dropup .caret,.navbar-fixed-bottom .dropdown .caret{
+	border-top:0;
+	border-bottom:4px solid #000;
+	content:""
+}
+.dropup .dropdown-menu,.navbar-fixed-bottom .dropdown .dropdown-menu{
+	top:auto;bottom:100%;
+	margin-bottom:1px
+}
+.dropdown-submenu{
+	position:relative
+}
+.dropdown-submenu>.dropdown-menu{
+	top:0;
+	left:100%;
+	margin-top:-6px;
+	margin-left:-1px;
+	-webkit-border-radius:0 6px 6px 6px;
+	-moz-border-radius:0 6px 6px 6px;
+	border-radius:0 6px 6px 6px
+}
+.dropdown-submenu:hover>.dropdown-menu{
+	display:block
+}
+.dropup .dropdown-submenu>.dropdown-menu{
+	top:auto;bottom:0;
+	margin-top:0;
+	margin-bottom:-2px;
+	-webkit-border-radius:5px 5px 5px 0;
+	-moz-border-radius:5px 5px 5px 0;
+	border-radius:5px 5px 5px 0
+}
+.dropdown-submenu>a:after{
+	display:block;
+	float:right;
+	width:0;
+	height:0;
+	margin-top:5px;
+	margin-right:-10px;
+	border-color:transparent;
+	border-left-color:#ccc;
+	border-style:solid;
+	border-width:5px 0 5px 5px;
+	content:" "
+}
+.dropdown-submenu:hover>a:after{
+	border-left-color:#fff
+}
+.dropdown-submenu.pull-left{
+	float:none
+}
+.dropdown-submenu.pull-left>.dropdown-menu{
+	left:-100%;
+	margin-left:10px;
+	-webkit-border-radius:6px 0 6px 6px;
+	-moz-border-radius:6px 0 6px 6px;
+	border-radius:6px 0 6px 6px
+}
+.dropdown .dropdown-menu .nav-header{
+	padding-right:20px;
+	padding-left:20px
+}
+
+.footer .nav-pills > li > a {
+  padding-right: 0px;
+  padding-left: 6px;
+  margin-right: 2px;
+  line-height: 14px;
+}
+.social{
+	display: inline;
+}
+
+.foot{
+	margin-bottom:10px;
+}
+.widget ul{
+	list-style-type: none;
+}
+.widget{
+	margin-left:-10px;
+}
+
+/* Jumbotron - Home Header */
+
+.jumbotron {
+  margin-top: 0px;
+  margin-bottom:0px;
+  position: relative;
+  height:30%;
+
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 2px 4px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
+  background: url('') no-repeat center;
+  /* Old browsers */
+  /* background: -moz-linear-gradient(45deg,  #40080E 50%, #991420 100%); /* FF3.6+ */
+  /* background: -webkit-gradient(linear, left bottom, right top, color-stop(50%,#6C0E17), color-stop(100%,#991420)); /* Chrome,Safari4+ */
+  /* background: -webkit-linear-gradient(45deg,  #40080E 50%,#991420 100%); /* Chrome10+,Safari5.1+ */
+  /* background: -o-linear-gradient(45deg,  #40080E 50%,#991420 100%); /* Opera 11.10+ */
+  /* background: -ms-linear-gradient(45deg,  #40080E 50%,#991420 100%); /* IE10+ */
+  /* background: linear-gradient(45deg,  #40080E 50%,#991420 100%); /* W3C */
+  /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#020031', endColorstr='#6d3353',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+   
+}
+.jumbotron h1 {
+  font-size: 100px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 1;
+}
+.jumbotron p {
+  font-size: 42px;
+  font-weight: 300;
+  color:#fff;
+  line-height: 1.25;
+  margin-bottom: 30px;
+}
+
+/* Link styles (used on .masthead-links as well) */
+.jumbotron a {
+  color: #fff;
+  color: rgba(255,255,255,.5);
+  
+}
+.jumbotron a:hover {
+  color: #3f3f3f;
+  text-shadow: 0 0 10px rgba(255,255,255,.25);
+}
+
+/* Download button */
+.masthead .btn {
+  padding: 19px 24px;
+  font-size: 24px;
+  font-weight: 200;
+  color: #fff; /* redeclare to override the `.jumbotron a` */
+  border: 0;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
+     -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
+          box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
+  -webkit-transition: none;
+     -moz-transition: none;
+          transition: none;
+}
+.masthead .btn:hover {
+	color: #fff;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
+     -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
+          box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
+}
+.masthead .btn:active {
+  -webkit-box-shadow: inset 0 2px 4px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.1);
+     -moz-box-shadow: inset 0 2px 4px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.1);
+          box-shadow: inset 0 2px 4px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.1);
+}
+
+/* End Jumbotron - Home Header */
+
+.widget-inner h3 {
+    font-size: 20px;
+}
+.entry-content h3 {
+    font-size: 18px;
+}
+.hentry header h1 {
+    font-size: 24px !important; 
+    font-family: helvetica, arial, sans-serif;
+}
+h1{
+    color:#991420;
+    font-size:45px;
+    text-shadow: 2px 2px #000;
+}
+h3{
+    font-size: 30px;
+    color:#fff;
+    text-shadow: 2px 2px #000;
+}
+.widget{
+     margin-left:10px;
+}
+.home-head{
+	text-align: center;
+}
+.btn-xlarge {
+	background: url(img/pod.png);
+}
+		
+.btn-xlarge:hover span {display:none}
+.btn-xlarge:hover:before {content:"Get Started Free"; font-size:95px;}
+
+.btn-xlarge {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #da4f49;
+  background-image: -moz-linear-gradient(top, #F5312D, #bd362f);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#F5312D), to(#bd362f));
+  background-image: -webkit-linear-gradient(top, #F5312D, #bd362f);
+  background-image: -o-linear-gradient(top, #F5312D, #bd362f);
+  background-image: linear-gradient(to bottom, #F5312D, #bd362f);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffee5f5b', endColorstr='#ffbd362f', GradientType=0);
+  border-color: #bd362f #bd362f #802420;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #F5312D;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+
+.subhead{
+    margin-top: 5%;
+    background: url('trans.png');
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+}
+.jumbo-btn{
+    padding-left:5%;
+    margin: auto;
+    text-align: center;
+    background: url('http://podio.koding.com/pod.png');
+}
+.jumbo-btn:hover span{
+display:none;
+}
+
+
+.jumbo-btn:hover:before {content: url('start.png')}
+
+.features{
+    text-align:center;
+    color:#fff;
+}
+
+
+
+/* Navbar Changes */
+.navbar .brand{
+    display:block;
+	float:left;
+	padding:10px 20px 10px;
+	margin-left:-20px;
+	font-size:38px;
+	font-weight:200;
+	color:#991520;
+	text-shadow:0 1px 0 #fff
+}
+.navbar .brand:hover{
+	text-decoration:none
+}
+.navbar-text{
+	margin-bottom:0;
+	line-height:40px
+}
+.navbar-link{
+	color:#777
+}
+.navbar-link:hover{
+	color:#333
+}
+.navbar .divider-vertical{
+	height:40px;
+	margin:0 9px;
+	border-right:1px solid #fff;
+	border-left:1px solid #f2f2f2
+}
+.toolbar{
+	margin-top:5px;
+	margin-right:5px;
+	font-size:18px;
+	font-color:#000;
+	opacity:.5;
+}
+.navbar-fixed-top .navbar-inner,.navbar-static-top .navbar-inner{
+	-webkit-box-shadow:inset 0 0px 0 rgba(0,0,0,0),0 0px 0px rgba(0,0,0,0);
+	-moz-box-shadow:inset 0 0px 0 rgba(0,0,0,0),0 0px 0px rgba(0,0,0,0);
+	box-shadow:inset 0 0px 0 rgba(0,0,0,0),0 0px 0px rgba(0,0,0,0)
+}
+.navbar-fixed-bottom .navbar-inner{
+	border-width:0px 0 0
+} 
+.navbar-fixed-top .navbar-inner,.navbar-static-top .navbar-inner{
+	border-width:0 0 0px
+}
+.navbar-inner {
+	  background-color: #ffffff; /* fallback color, place your own */
+	  /* Gradients for modern browsers, replace as you see fit */
+	  background-image: -moz-linear-gradient(top, #ffffff, #ffffff);
+	  background-image: -ms-linear-gradient(top, #ffffff, #ffffff);
+	  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#ffffff));
+	  background-image: -webkit-linear-gradient(top, #ffffff, #ffffff);
+	  background-image: -o-linear-gradient(top, #ffffff, #ffffff);
+	  background-image: linear-gradient(top, #ffffff, #ffffff);
+	  background-repeat: repeat-x;
+	  /* IE8-9 gradient filter */
+	  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#333333', endColorstr='#222222', GradientType=0);
+	/* @end */
+}	
+
+
+/* Player Elements */
+
+.play-btn {
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	-webkit-border-radius: 50px; 
+	-moz-border-radius: 50px;
+	background: #fff url('http://localhost:8888/development/images/play.png') no-repeat 63% 48%;
+    /*
+    -moz-box-shadow:    3px 3px 4px 2px #818181;
+     -webkit-box-shadow: 3px 3px 4px 2px #818181;
+     box-shadow:         3px 3px 4px 2px #818181;
+	 */
+	position: relative;
+	top: 72px;
+	left:-4px;
+	z-index:100;
+}
+.pause-btn {
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	background: #fff url('http://localhost:8888/development/images/pause.png') no-repeat center;
+    /*
+    -moz-box-shadow:    3px 3px 4px 2px #818181;
+     -webkit-box-shadow: 3px 3px 4px 2px #818181;
+     box-shadow:         3px 3px 4px 2px #818181;
+	 */
+	position: relative;
+	top: 72px;
+	left:-4px;
+	z-index:100;
+	}		
+/* New Circle Player - Start */
+	
+	/* Playlist */
+	
+.jp-artist {
+	
+}
+.jp-playlist{
+	margin-top: -10px;
+	overflow-y: scroll;
+	background: #fff;
+	
+}
+.jp-playlist ul {
+	overflow: hidden;	
+}
+.jp-playlist li {
+	/* background: #fff; url(img/playlist-item-bgd.png) repeat-x; */
+	width:100%;
+	margin: 0px;
+	padding: 5px;
+	display: block !important;
+	border-bottom: 1px solid #9D1322;
+	
+	/*
+	text-overflow: ellipsis; /* will make [...] at the end */
+	/*white-space: nowrap; /* paragraph to one line */
+	/*overflow:hidden; /* older browsers */
+}
+.jp-playlist li:hover {
+	/* background-color: rgba(255,255,255,.75); */
+}
+li.jp-playlist-current {
+	/* background: #7A0017;  url(img/playlist-item-current-bgd.png) repeat-x; */
+}
+.jp-playlist li:first-child {		
+}
+.jp-playlist li:last-child {		
+}
+.jp-playlist li a {
+	display: inline-block;
+	color: #000;
+	font-size:12px;
+	overflow: hidden;
+}
+.jp-artist {
+	display: inline;
+	color: #000;
+	font-size:12px;
+	overflow: hidden;
+}
+}
+.jp-playlist li a:hover {
+	text-decoration:none;
+	color: #fff;
+	font-size:12px;
+	overflow: hidden;
+}
+.jp-playlist a:hover {
+	text-decoration:none;
+	width:90%;
+	color: #000;
+	font-size:12px;
+	overflow: hidden;
+}
+.jp-playlist a{
+	text-decoration:none;
+	width:90%;
+	color: #000;
+	font-size:12px;
+	overflow: hidden;
+}
+.jp-playlist-item {
+	width:100%;
+	display: inline-block;
+}
+.jp-duration {
+	display:inline;
+	padding:5px;
+}
+#player-wrapper {
+	position: absolute;
+	top: 25px;
+	left: 0;	
+}
+
+/* Circle Player CSS */
+.cp-container {
+	position: relative;
+	margin-top:0px;
+	width: 162px;
+	height: 162px;
+	background: url("img/buffer.png") 0 0 no-repeat;
+    -moz-border-radius:81px;
+    -webkit-border-radius:81px;
+	border-radius:81px;
+	padding: 0;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+	top: 40px;
+	left:-4px;
+	margin-bottom:10px;
+}
+.cp-container :focus {
+	border:none; 
+	outline:0;
+}
+.cp-buffer-1,
+.cp-buffer-2,
+.cp-progress-1,
+.cp-progress-2 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 162px;
+	height: 162px;
+	clip:rect(0px,81px,162px,0px);
+	-moz-border-radius:81px;
+	-webkit-border-radius:81px;
+	border-radius:81px;
+}
+.cp-buffer-1,
+.cp-buffer-2 {
+	background: url("img/buffer.png") 0 0 no-repeat;
+}     
+/* FALLBACK for .progress
+ * (24 steps starting from 1hr filled progress, Decrease second value by 162px for next step)
+ * (It needs the container selector to work. Or use div)
+ * This was not updated for white noise player to do use case  
+.cp-container .cp-fallback {
+	background: url("progress_sprite.jpg") no-repeat;
+	background-position: 0 162px; 
+}
+*/
+.cp-progress-1,
+.cp-progress-2 {
+	background: url("img/progress.png") 0 0 no-repeat;
+} 
+.cp-buffer-holder,
+.cp-progress-holder,
+.cp-circle-control {
+	position:absolute;
+	width:162px;
+	height:162px;
+} 
+.cp-circle-control {
+	cursor:pointer;
+}
+.cp-buffer-holder,
+.cp-progress-holder {
+	clip:rect(0px,162px,162px,81px);
+	display:none;
+}
+
+/* This is needed when progress is greater than 50% or for fallback */
+.cp-buffer-holder.cp-gt50,
+.cp-progress-holder.cp-gt50,
+.cp-progress.cp-fallback{
+	clip:rect(auto, auto, auto, auto);
+}  
+.cp-controls {
+	margin:0;
+	padding: 53px;
+}
+.cp-controls li{
+	list-style-type:none;
+	display: block;
+	/*IE Fix*/  
+	position:absolute;
+}
+.cp-controls li a{
+	position: relative;
+	display: block;
+	width:60px;
+	height:60px;
+	text-indent:-9999px;
+	z-index:1;      
+}
+.cp-controls .cp-play {
+	background: url("img/controls.png") 0 0 no-repeat;
+}
+.cp-controls .cp-play:hover {
+	background: url("img/controls.png") -60px 0 no-repeat;
+}
+.cp-controls .cp-pause {
+	background: url("img/controls.png") 0 -60px no-repeat;
+}
+
+.cp-controls .cp-pause:hover {
+	background: url("img/controls.png") -60px -60px no-repeat;
+}
+.cp-jplayer {
+	width: 0;
+	height: 0; 
+}
+h4{
+    margin-top:0px;
+}
+.info{
+	margin: -46px 0 0 -46px;
+}
+.listbtn{
+	opacity:.7;
+}
+.showhead{
+    margin-top:45px;
+}
+.libimg{
+	width: 115px;
+	margin: 5px;
+}
+.libscroll {
+  padding: 0;
+  overflow-y: scroll; 
+}
+.scrollable {
+   margin-top:20px;
+   height: 520px;
+   overflow: auto;
+}
+.scrollable2 {
+   margin-top:20px;
+   height: 460px;
+   overflow: auto;
+}
+.libitems{
+	display:inline;
+}
+
+.cp-jplayer{
+	display:inline;
+}
+
+.search{
+	margin-top: 0px;
+}
+.tags{
+	margin-top: 60px;
+	overflow-y: scroll;
+	background: #9D1322;
+	width:90%;
+}
+.tags a {
+	display: inline-block;
+	color: #fff;
+	font-size:12px;
+	overflow: hidden;
+}
+.tags ul {
+	overflow: hidden;	
+}
+.tags li {
+	/* background: #9D1322; url(img/playlist-item-bgd.png) repeat-x; */
+	width:90%;
+	margin: 4px;
+	padding: 5px;
+	display: block !important;
+	border-bottom: 1px solid #fff;
+	/*
+	text-overflow: ellipsis; /* will make [...] at the end */
+	/*white-space: nowrap; /* paragraph to one line */
+	/*overflow:hidden; /* older browsers */
+}
+.playsearch {
+	margin-top:20px;
+}
+.carousel-control {
+  position: absolute;
+  top: 2%;
+  left: 15px;
+  width: 40px;
+  height: 40px;
+  margin-top: -20px;
+  font-size: 60px;
+  font-color: #000;
+  font-weight: 100;
+  line-height: 30px;
+  color: #000;
+  text-align: center;
+  -webkit-border-radius: 23px;
+  -moz-border-radius: 23px;
+  border-radius: 23px;
+  filter: alpha(opacity=50);
+}

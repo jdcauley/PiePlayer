@@ -2,8 +2,7 @@
 // Include the SimplePie library
 require_once(($_SERVER['DOCUMENT_ROOT'] . '/simplepie.php'));
  
-// Because we're using multiple feeds, let's just set the headers here.
-header('Content-type: application/json');
+// Beca'se we're using multiple feeds, let's just set the headers here.
  
 // These are the feeds we want to use
 $feeds = array(
@@ -13,7 +12,7 @@ $feeds = array(
 	'http://feeds.5by5.tv/news',
 	'http://s3.roosterteeth.com/podcasts/index.xml',
 	'http://s3.roosterteeth.com/podcasts/gaming-index.xml',
-	'http://www.theverge.com/rss/index.xml',
+	'http://www.theverge.com/video/the-vergecast/rss/index.xml',
 );
  
 // This array will hold the items we'll be grabbing.
@@ -49,16 +48,17 @@ $playlist = new SimpleXMLElement('<playlist/>');
 foreach($first_items as $item):
 	$feed = $item->get_feed();
 
-$track = $playlist->addChild('track');
+$data = $playlist->addChild('playlist');
+$data->addChild('thumb_url', $feed->get_image_url());
+$data->addChild('poster_url', $feed->get_image_url());
+$sources = $data->addChild('sources');
 
-
-$track->addChild('title', $item->get_title());
 if ($enclosure = $item->get_enclosure());
-$track->addChild('mp3', $enclosure->get_link());
-$track->addChild('type', $enclosure->get_type());
+$sources->addChild('src', $enclosure->get_link());
+$sources->addChild('type', $enclosure->get_type());
+$sources->addChild('title', $item->get_title());
 // $track->addChild('duration', $enclosure->get_duration());
-$track->addChild('poster', $feed->get_image_url());
 endforeach;
 
-print($playlist->asXML());
+echo json_encode($playlist);
 ?>

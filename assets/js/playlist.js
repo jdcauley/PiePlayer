@@ -1,7 +1,7 @@
 	$(document).ready(function(){
 	// Get the Playlist from the xml file
 	$.ajax({
-        type: "GET",
+      type: "GET",
 			url: "../../playlist/playlist.php",
 			dataType: "xml",
 			success: function(xml) {

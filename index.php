@@ -1,31 +1,29 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-
-	<title>PiePlayer</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pod Engine - Library</title>
+	<meta name="viewport" content="width=device-width, initial-scale="1.0">
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 	<link rel="stylesheet" href="/assets/css/bootstrap.css">
 	<link rel="stylesheet" href="/assets/css/bootstrap-responsive.css">
-	<link rel="stylesheet" href="/assets/css/player.css">
-				
+	<link rel="stylesheet" href="/assets/css/player.css">			
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 	<script src="/assets/js/circleplayer.min.js"></script>
-	
 </head>
 <body>
    <header id="banner" class="navbar navbar-static-top" role="banner">
-   	<div class="navbar-inner">
-   		<div class="container">
-     		<a class="brand" href="/">PiePlayer</a>
-     		  <nav id="nav-main" class="nav-collapse" role="navigation"> 
-	      		<ul class="nav pull-right">
-					  </ul>
-					</nav>
-   			</div>
-   		</div>
-   	</header> 
-   	
+		<div class="navbar-inner">
+			<div class="container">    
+				<a class="brand" href="">PiePlayer</a>
+     		    	<nav id="nav-main" class="nav-collapse" role="navigation">
+	      			<ul class="nav dropdown pull-right">
+					</ul>
+				</nav>
+			</div>
+		</div>
+   </header> 
+
+
 		<div id="cp_container" class="container main">
 			<div class="row">
 				<div class="span4" align="center">			
@@ -45,17 +43,14 @@
 						</div>
 					</div>
 				</div>
-			</div>
+				
 		
 		
-				<footer class="container ">
+				<footer>
 					<div class="row">
-						<div class="span12">
-
-						</div>
 					</div>
 				</footer>
-		
+		</div>
 		
 <script src="/assets/js/playlist.js"></script>
 <script src="/assets/js/bootstrap.js"></script>

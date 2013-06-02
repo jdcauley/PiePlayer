@@ -10,3 +10,24 @@
 [29-May-2013 21:34:41 America/New_York] PHP Notice: A feed could not be found at http://itunes.apple.com/us/podcast/this-is-my-next-podcast/id430333725. A feed with an invalid mime type may fall victim to this error, or SimplePie was unable to auto-discover it.. Use force_feed() if you are certain this URL is a real feed. in /home/cauley/public_html/listen/simplepie.php on line 1521
 [29-May-2013 21:36:29 America/New_York] PHP Warning:  /home/cauley/public_html/listensimplypie/cache is not writeable. Make sure you've set the correct relative or absolute path, and that the location is server-writable. in /home/cauley/public_html/listen/simplepie.php on line 1370
 [29-May-2013 21:36:29 America/New_York] PHP Warning:  /home/cauley/public_html/listensimplypie/cache is not writeable. Make sure you've set the correct relative or absolute path, and that the location is server-writable. in /home/cauley/public_html/listen/simplepie.php on line 1370
+[30-May-2013 14:35:07 America/New_York] PHP Parse error:  syntax error, unexpected T_FOREACH in /home/cauley/public_html/listen/playlist/exp.php on line 47
+[30-May-2013 14:35:21 America/New_York] PHP Parse error:  syntax error, unexpected T_FOREACH in /home/cauley/public_html/listen/playlist/exp.php on line 47
+[30-May-2013 14:39:43 America/New_York] PHP Parse error:  syntax error, unexpected T_FOREACH in /home/cauley/public_html/listen/playlist/exp.php on line 48
+[31-May-2013 20:23:06 America/New_York] PHP Fatal error:  Call to a member function addChild() on a non-object in /home/cauley/public_html/listen/playlist/exp.php on line 53
+[31-May-2013 20:23:24 America/New_York] PHP Warning:  SimpleXMLElement::addChild() [<a href='simplexmlelement.addchild'>simplexmlelement.addchild</a>]: Element name is required in /home/cauley/public_html/listen/playlist/exp.php on line 52
+[31-May-2013 20:23:24 America/New_York] PHP Fatal error:  Call to a member function addChild() on a non-object in /home/cauley/public_html/listen/playlist/exp.php on line 54
+[31-May-2013 20:25:08 America/New_York] PHP Fatal error:  Call to a member function addChild() on a non-object in /home/cauley/public_html/listen/playlist/exp.php on line 55
+[31-May-2013 20:26:02 America/New_York] PHP Fatal error:  Call to a member function addChild() on a non-object in /home/cauley/public_html/listen/playlist/exp.php on line 53
+[31-May-2013 20:26:21 America/New_York] PHP Fatal error:  Call to a member function addChild() on a non-object in /home/cauley/public_html/listen/playlist/exp.php on line 53
+[31-May-2013 20:29:54 America/New_York] PHP Warning:  SimpleXMLElement::addChild() [<a href='simplexmlelement.addchild'>simplexmlelement.addchild</a>]: Element name is required in /home/cauley/public_html/listen/playlist/exp.php on line 51
+[31-May-2013 20:29:54 America/New_York] PHP Fatal error:  Call to a member function addChild() on a non-object in /home/cauley/public_html/listen/playlist/exp.php on line 53
+[31-May-2013 20:30:32 America/New_York] PHP Parse error:  syntax error, unexpected T_ENDFOREACH in /home/cauley/public_html/listen/playlist/exp.php on line 58
+[31-May-2013 20:33:01 America/New_York] PHP Fatal error:  Call to undefined function addChild() in /home/cauley/public_html/listen/playlist/exp.php on line 51
+[31-May-2013 20:39:42 America/New_York] PHP Fatal error:  Call to undefined method SimpleXMLElement::get_title() in /home/cauley/public_html/listen/playlist/exp.php on line 55
+[31-May-2013 20:39:44 America/New_York] PHP Fatal error:  Call to undefined method SimpleXMLElement::get_title() in /home/cauley/public_html/listen/playlist/exp.php on line 55
+[31-May-2013 20:39:53 America/New_York] PHP Fatal error:  Call to undefined method SimpleXMLElement::get_title() in /home/cauley/public_html/listen/playlist/exp.php on line 55
+[31-May-2013 20:39:55 America/New_York] PHP Fatal error:  Call to undefined method SimpleXMLElement::get_title() in /home/cauley/public_html/listen/playlist/exp.php on line 55
+[31-May-2013 21:19:23 America/New_York] PHP Fatal error:  Call to a member function addChild() on a non-object in /home/cauley/public_html/listen/playlist/exp.php on line 57
+[31-May-2013 21:19:43 America/New_York] PHP Fatal error:  Call to a member function addChild() on a non-object in /home/cauley/public_html/listen/playlist/exp.php on line 57
+[31-May-2013 21:19:55 America/New_York] PHP Fatal error:  Call to a member function addChild() on a non-object in /home/cauley/public_html/listen/playlist/exp.php on line 57
+[31-May-2013 21:21:24 America/New_York] PHP Parse error:  syntax error, unexpected T_STRING in /home/cauley/public_html/listen/playlist/exp.php on line 57
